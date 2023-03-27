@@ -41,7 +41,7 @@
 
       <div id="logo">
         <a href="index.html"><img src="assets/img/talexam-logo-transparent.png" style="width: 100px;"></a>
-        <h1><a href="index.html" style="font-family: Roboto San Arial, Helvetica, sans-serif;">TALEXAM</a></h1>
+       <h1><a href="index.html" style="font-family: Times New Roman, Times, serif; margin-top: 10px; ">TALEXAM</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         
       </div>
@@ -77,20 +77,17 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
 
-    <div></div>
-    <video autoplay loop muted class="video-bg" id="video-bg "> 
-      <source src="/assets/img/hero-vid.mp4" type="video/mp4" alt="background video" style=" background: linear-gradient(45deg, rgba(1, 59, 186, 0.8), rgba(232, 179, 0, 0.8))">
     
-
-
-    <div class="hero-text" data-aos="zoom-out">
-
-      <h2>Welcome to TALEXAM</h2>
-      <p>We are team of talented </p>
-      <a href="#about" class="btn-get-started scrollto">Learn more ...</a>
-    </div>
-
+    <video autoplay loop muted class="video-bg" id="video-bg overlay"> 
+      <source src="/assets/img/hero-vid.mp4" type="video/mp4" alt="background video" >
+      <!-- <source src="/assets/img/illustrations/cityscape.gif" type="video/mp4" alt="background video" > -->
+    
   </video>
+
+  <div class="hero-text" data-aos="zoom-out" style="font-weight: bold;">
+
+    <h2>TALEXAM INSURANCE</h2>
+  </div>
 
     <script>
       var button = document.getElementById('toggle-button');
@@ -115,6 +112,8 @@
               <span class="section-divider"></span>
               <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
             </div>
+            <br>
+        <br>
     
             <div class="row gy-4">
     
@@ -135,18 +134,25 @@
               </div>
 
               <div class="col-lg-4">
-                <div class="box">
-                  <!-- <div class="icon"><i class="bi bi-card-checklist"></i></div> -->
-                  <h4 class="title"><a href="">Values</a></h4>
-                  <div class="description">
-                  <ul>
-                    <li>Appreciation of diversity</li>
+                <div class="box" >
+                  <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                  <h4 class="title" ><a href="" >Values</a></h4>
+                  <div class="description" >
+                  <!-- <ol>
                     <li>Passion</li>
                     <li>Innovation</li>
-                    <li>Action and results orientation</li>
-                    <li>Collaborative sharing</li>
                     <li>Entrepreneurial Spirit</li>
-                  </ul>
+                    <li>Collaborative sharing</li>
+                    <li>Appreciation of diversity</li>
+                    <li>Action and results orientation</li>
+                    
+                  </ol> -->
+                  <p>Passion</p>
+                    <p>Innovation</p>
+                    <p>Entrepreneurial Spirit</p>
+                    <p>Collaborative sharing</p>
+                    <p>Appreciation of diversity</p>
+                    <p>Action and results orientation</p>
                 </div>
                 </div>
               </div>
@@ -167,8 +173,9 @@
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>
             sunt in culpa qui officia deserunt mollit anim id est laborum
           </p> -->
-        </div>
-
+        </div>     
+        <br>
+        <br>
         
         <div class="row">
           <div class="col-lg-6 about-img" data-aos="fade-right" dat-aos-delay="100">
@@ -179,7 +186,6 @@
   
             <p>
               Most people rarely  put the words simple and insurance together 
- 
               And that’s probably accurate , in most cases….
             </p>
 
@@ -193,9 +199,7 @@
             <p>
               We have  acquired knowledge in a variety of  specialist areas  and have advised businesses from varied manufacturing industries , 
               Large construction projects, Retail chains, Private Equity  and Investment companies , Hospitality and Large Commercial  
-              Farms for well over a decade. 
-            <p>
-              We try to take the devil out of the detail (as much as possible ) and provide  straightforward  tailor made solutions  for your every insurance need .
+              Farms for well over a decade. We try to take the devil out of the detail (as much as possible ) and provide  straightforward  tailor made solutions  for your every insurance need .
             </p>
             <p>
               We are entreprenuers so we understand that  excellence and personal attention make all the difference. So we will always go the extra mile to  ensure you get the quality and the service you deserve . 
@@ -350,12 +354,22 @@
           </div>
         </section><!-- End Clients Section -->
 
+
                     <!-- ======= Call To Action Section ======= -->
     <section id="call-to-action">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3 class="cta-title">OUR SERVICES</h3>
+          <div class="col-lg-4 text-center"></div>
+
+          <div class="col-lg-4 text-center text-lg-start">
+
+            <div class="section-header">
+              <h3 class="section-title" style="color: #ffffff;">OUR SERVICES</h3>
+              <span class="section-divider" style="background: #ffffff;"></span>
+            </div>
+            <br>
+            <br>
+
             <canvas id="can" width="480" height="480" />
 
             <script>
@@ -364,7 +378,8 @@
               var lastend = 0;
               var data = [120,120,120];
               var myTotal = 0;
-              var myColor = ['#013BBA', '#E8B300','#c1dd54'];
+              // var myColor = ['#013BBA', '#E8B300','#c1dd54'];
+              var myColor = ['#013BBA', '#013BBA','#013BBA'];
               var labels = ['Insurance Placement', 'Insurance due diligence', 'Insurance restructuring'];
 
               for(var e = 0; e < data.length; e++)
@@ -398,13 +413,14 @@
               }
             </script>
           </div>
-          <div class="col-lg-3 text-center" style="color: white;margin-top: 100px;">
+          <div class="col-lg-4 text-center"></div>
+          <!-- <div class="col-lg-3 text-center" style="color: white;margin-top: 100px;">
             <h4>Insurance Restructuring</h4>
             <br>
             <h4>Insurance due diligence</h4>
             <br>
             <h4>Insurance placement</h4>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -419,7 +435,7 @@
 
           <div class="col-lg-4 col-md-4">
             <div class="contact-about">
-              <h3>TALEXAM</h3>
+              <h3><a href="" style="font-family: Times New Roman, Times, serif; ">TALEXAM</a></h3>
               <p>Kindly reach out to us and connect with us.</p>
               <div class="social-links">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -513,10 +529,11 @@
         </div>
         <div class="col-lg-6">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
-            <a href="#about" class="scrollto">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
+            <a href="index.html" >Home</a>
+            <a href="about-us.html" >About</a>
+            <a href="products.html">Products</a>
+            <a href="faq.html" >Frequently asked questions</a>
+            <a href="#contact"class="scrollto">Contact us</a>
           </nav>
         </div>
       </div>
